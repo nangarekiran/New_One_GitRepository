@@ -1,4 +1,4 @@
-package pageLayer;
+package com.qa.pageLayer;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
