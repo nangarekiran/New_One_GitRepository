@@ -18,7 +18,10 @@ public class LoginPage extends TestBase {
 
 	@FindBy(xpath="//div[text()='Login ']")
 	private WebElement login;
-	
+
+	@FindBy(xpath="//a[contains(text(), 'Logout')]")
+	private WebElement logout;
+
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 
@@ -33,4 +36,7 @@ public class LoginPage extends TestBase {
 		login.click();
 	}
 
+	public void verifylogout() {
+		logout.click();
+	}
 }
