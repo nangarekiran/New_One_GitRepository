@@ -8,10 +8,12 @@ public class ReportTestPage extends TestBase {
 
 	@Test
 	public void setReport() {
-		r.clickOnReport();
-		//r.clickOnUserTab();
-		//r.clickOnClose();
+		l.setUserName();
+		l.setPassword();
+		l.verifyLogin();
+		r.clickOnLogout();
 
 	}
+
 
 }
